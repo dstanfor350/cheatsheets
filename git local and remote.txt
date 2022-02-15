@@ -1,0 +1,44 @@
+Create local repository:
+    local:
+        git init <reponame>
+        create and add file
+        git status
+        git add new file
+        git commit -m "<comment>"
+        
+Create remote repository
+    login to github
+    click green "New" button on left
+        on "Create a new repository" page
+        * enter a Repository name 
+        * add optional description
+        * make public or private
+        * check Add a READMEFile
+        * check Add .gitignore
+            got to https://github.com/github/gitignore for common .gitignore configurations
+        
+        * Click green "Create repository" button
+        
+Add a new remote if not already configured
+    * git remote add <remote_name> remote_URL
+        git remote add origin https://github.com/dstanfor350/GitCheatSheets
+    
+Push local repo to remote main
+    If not already done configure the push destination
+    * git remote add https://github.com/dstanfor350/GitCheatSheets
+    * git push --set-upstream origin main
+    
+    
+…or create a new repository on the command line
+echo "# cheatsheets" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/dstanfor350/cheatsheets.git
+git push -u origin main    
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/dstanfor350/cheatsheets.git
+git branch -M main
+git push -u origin main
