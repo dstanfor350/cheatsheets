@@ -1,3 +1,4 @@
+firstbranch
 Code Checkin to remote repository:
 on NonInteractive:	commit change to local
 					push to remote
@@ -6,5 +7,5 @@ on github:	"Compare & Pull request"	// compares noninteractive br to master br
 										// I think there was a Merge & Create pull request
 			resolve conflicts
 			wait for ADO to build
-			Assign Reviewer when successful build
+			Assign Reviewer when successful buigitld
 			merge noninteractive to master
